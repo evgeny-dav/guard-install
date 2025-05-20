@@ -17,7 +17,7 @@ const featuredProducts = [
   {
     id: 2,
     name: 'Извещатель пожарный ИП 212-45',
-    image: 'https://github.com/evgeny-dav/guard-install/blob/main/src/components/home/ip212.png',
+    image: 'https://images.app.goo.gl/UepsyCtW8yR2Vj9y7',
     price: 890,
     category: 'Пожарная сигнализация',
   },

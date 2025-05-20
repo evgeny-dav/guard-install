@@ -48,7 +48,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats 
       <section className="bg-gray-50 py-16">
         <div className="guard-container">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -82,7 +82,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Values */}
       <section className="section-padding">

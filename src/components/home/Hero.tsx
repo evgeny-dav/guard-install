@@ -12,7 +12,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Современные системы безопасности
             </h1>
-            <p className="text-lg md:text-xl text-gray-200">
+            <p className="text-lg md:text-xl text-gray-500">
               Профессиональный монтаж систем видеонаблюдения и пожарной сигнализации. Гарантия качества и надежности.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

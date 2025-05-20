@@ -17,7 +17,7 @@ const featuredProducts = [
   {
     id: 2,
     name: 'Извещатель пожарный ИП 212-45',
-    image: 'https://images.unsplash.com/photo-1588611415506-cced14a0ca97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    image: '/src/components/home/ip212.png',
     price: 890,
     category: 'Пожарная сигнализация',
   },

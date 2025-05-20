@@ -21,7 +21,7 @@ const products = [
   {
     id: 2,
     name: 'Извещатель пожарный ИП 212-45',
-    image: 'https://images.unsplash.com/photo-1588611415506-cced14a0ca97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    image: 'https://satro-paladin.com/_img/satro/goods/0/956/00-00006956/0be9949e_e486_11eb_80d8_48df3707765d_e5513ad3_e53d_11eb_80d8_48df3707765d%20%281%29.png',
     price: 890,
     category: 'fire',
   },

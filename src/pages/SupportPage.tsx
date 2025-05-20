@@ -63,6 +63,14 @@ const SupportPage = () => {
     }
   ];
 
+  // Function to switch tabs programmatically
+  const switchToContactTab = () => {
+    const contactTabTrigger = document.querySelector('[data-value="contact"]');
+    if (contactTabTrigger instanceof HTMLElement) {
+      contactTabTrigger.click();
+    }
+  };
+
   return (
     <div>
       <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-16">
@@ -212,7 +220,7 @@ const SupportPage = () => {
                     Не нашли ответ на свой вопрос? Свяжитесь с нашей службой поддержки через форму обратной связи или по телефону.
                   </p>
                   <div className="text-center mt-4">
-                    <Button onClick={() => document.querySelector('[data-value="contact"]').click()}>
+                    <Button onClick={switchToContactTab}>
                       Связаться с поддержкой
                     </Button>
                   </div>

@@ -200,6 +200,7 @@ const ContactsPage = () => {
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy"
+              title="Карта расположения офиса"
             ></iframe>
           </div>
         </div>

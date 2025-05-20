@@ -11,7 +11,7 @@ const CTA = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Готовы обеспечить безопасность?
           </h2>
-          <p className="text-lg md:text-xl mb-8 text-gray-200">
+          <p className="text-lg md:text-xl mb-8 text-gray-500">
             Свяжитесь с нами сегодня для бесплатной консультации и оценки стоимости проекта.
             Наши специалисты ответят на все ваши вопросы и подберут оптимальное решение.
           </p>

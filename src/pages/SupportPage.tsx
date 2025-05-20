@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { HelpCircle, FileQuestion, MessageSquare, Phone, Mail } from 'lucide-react';
+import { HelpCircle, FileQuestion, MessageSquare, Phone, Mail, FileText, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const SupportPage = () => {
@@ -63,6 +63,40 @@ const SupportPage = () => {
     }
   ];
 
+  // Материалы и инструкции
+  const materials = [
+    {
+      title: 'Руководство по установке IP-камер',
+      description: 'Подробная инструкция по монтажу и настройке IP-камер видеонаблюдения',
+      fileType: 'PDF',
+      fileSize: '4.2 MB',
+    },
+    {
+      title: 'Схемы подключения систем контроля доступа (СКУД)',
+      description: 'Типовые схемы подключения считывателей, электромагнитных замков и контроллеров',
+      fileType: 'PDF',
+      fileSize: '3.8 MB',
+    },
+    {
+      title: 'Настройка видеорегистраторов',
+      description: 'Пошаговое руководство по настройке видеорегистраторов и подключению камер',
+      fileType: 'PDF',
+      fileSize: '5.1 MB',
+    },
+    {
+      title: 'Монтаж турникетов и шлагбаумов',
+      description: 'Инструкция по установке и подключению турникетов и шлагбаумов к СКУД',
+      fileType: 'PDF',
+      fileSize: '6.3 MB',
+    },
+    {
+      title: 'Техническое обслуживание систем видеонаблюдения',
+      description: 'Регламентные работы и график обслуживания систем видеонаблюдения',
+      fileType: 'PDF',
+      fileSize: '2.9 MB',
+    }
+  ];
+
   // Function to switch tabs programmatically
   const switchToContactTab = () => {
     const contactTabTrigger = document.querySelector('[data-value="contact"]');
@@ -88,7 +122,7 @@ const SupportPage = () => {
         <div className="guard-container">
           <Tabs defaultValue="contact">
             <div className="mb-8 flex justify-center">
-              <TabsList className="grid grid-cols-1 md:grid-cols-2 w-full max-w-md">
+              <TabsList className="grid grid-cols-1 md:grid-cols-3 w-full max-w-2xl">
                 <TabsTrigger value="contact" className="flex items-center gap-2">
                   <MessageSquare className="h-4 w-4" />
                   <span>Связаться с нами</span>
@@ -96,6 +130,10 @@ const SupportPage = () => {
                 <TabsTrigger value="faq" className="flex items-center gap-2">
                   <HelpCircle className="h-4 w-4" />
                   <span>Частые вопросы</span>
+                </TabsTrigger>
+                <TabsTrigger value="materials" className="flex items-center gap-2">
+                  <FileText className="h-4 w-4" />
+                  <span>Материалы и инструкции</span>
                 </TabsTrigger>
               </TabsList>
             </div>
@@ -224,6 +262,64 @@ const SupportPage = () => {
                       Связаться с поддержкой
                     </Button>
                   </div>
+                </div>
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="materials">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-2xl font-bold mb-6">Материалы и инструкции по монтажу</h2>
+                <p className="text-gray-600 mb-8">
+                  Здесь вы можете скачать полезные материалы и инструкции по монтажу и настройке систем видеонаблюдения и СКУД.
+                  Материалы доступны в формате PDF и содержат подробные схемы и пошаговые руководства.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {materials.map((material, index) => (
+                    <Card key={index} className="overflow-hidden">
+                      <div className="p-6">
+                        <div className="flex items-start gap-3 mb-4">
+                          <div className="rounded-full bg-[#0F3460]/10 p-2 mt-1">
+                            <FileText className="h-5 w-5 text-[#0F3460]" />
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-lg">{material.title}</h3>
+                            <p className="text-gray-600 text-sm">{material.description}</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="text-sm text-gray-500">
+                            {material.fileType} · {material.fileSize}
+                          </div>
+                          <Button variant="outline" size="sm" className="flex items-center gap-2">
+                            <Download className="h-4 w-4" />
+                            Скачать
+                          </Button>
+                        </div>
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+                
+                <div className="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h3 className="text-lg font-semibold mb-2">Нужна дополнительная помощь?</h3>
+                  <p className="text-gray-700 mb-4">
+                    Если вам требуется дополнительная техническая документация или консультация специалиста по монтажу,
+                    свяжитесь с нашей службой поддержки.
+                  </p>
+                  <Button onClick={switchToContactTab}>
+                    Запросить дополнительные материалы
+                  </Button>
+                </div>
+                
+                <div className="mt-8 text-center">
+                  <h3 className="text-lg font-semibold mb-3">Оставьте отзыв о наших материалах</h3>
+                  <p className="text-gray-600 mb-4">
+                    Ваше мнение поможет нам улучшить качество технической документации
+                  </p>
+                  <Button variant="outline">
+                    Оставить отзыв
+                  </Button>
                 </div>
               </div>
             </TabsContent>

@@ -17,7 +17,7 @@ const featuredProducts = [
   {
     id: 2,
     name: 'Извещатель пожарный ИП 212-45',
-    image: 'https://images.app.goo.gl/UepsyCtW8yR2Vj9y7',
+    image: 'https://satro-paladin.com/_img/satro/goods/0/956/00-00006956/0be9949e_e486_11eb_80d8_48df3707765d_e5513ad3_e53d_11eb_80d8_48df3707765d%20%281%29.png',
     price: 890,
     category: 'Пожарная сигнализация',
   },

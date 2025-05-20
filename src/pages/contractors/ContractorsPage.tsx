@@ -6,7 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
-import { Building2, BookOpen, Tool, Clock, CheckCircle, AlertCircle } from 'lucide-react';
+import { Building2, BookOpen, Wrench, Clock, CheckCircle, AlertCircle, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 // Доступные проекты для подрядчиков
@@ -150,7 +150,7 @@ const ContractorsPage = () => {
             <Card>
               <CardHeader className="pb-2">
                 <div className="w-12 h-12 rounded-full bg-[#0F3460]/10 flex items-center justify-center mb-4">
-                  <Tool className="h-6 w-6 text-[#0F3460]" />
+                  <Wrench className="h-6 w-6 text-[#0F3460]" />
                 </div>
                 <CardTitle>Техническая поддержка</CardTitle>
               </CardHeader>

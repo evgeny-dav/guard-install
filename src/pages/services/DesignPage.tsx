@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { FileText, CheckCircle, LayoutPlanIcon, Ruler } from 'lucide-react';
+import { FileText, CheckCircle, LayoutIcon, Ruler } from 'lucide-react';
 
 const DesignPage = () => {
   return (
@@ -94,7 +94,7 @@ const DesignPage = () => {
             
             <Card className="p-6">
               <div className="rounded-full bg-[#0F3460]/10 h-12 w-12 flex items-center justify-center mb-4">
-                <LayoutPlanIcon className="h-6 w-6 text-[#0F3460]" />
+                <LayoutIcon className="h-6 w-6 text-[#0F3460]" />
               </div>
               <h3 className="text-xl font-bold mb-3">Разработка проекта</h3>
               <p className="text-gray-600">

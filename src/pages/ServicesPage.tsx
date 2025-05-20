@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Camera, Bell, Settings, Tool, FileText, Phone } from 'lucide-react';
+import { Camera, Bell, Settings, Wrench, FileText, Phone } from 'lucide-react';
 
 const services = [
   {
@@ -30,7 +30,7 @@ const services = [
     path: '/services/design',
   },
   {
-    icon: <Tool className="h-16 w-16 text-guard-accent" />,
+    icon: <Wrench className="h-16 w-16 text-guard-accent" />,
     title: 'Модернизация систем',
     description: 'Обновление и улучшение существующих систем безопасности. Повышение эффективности работы и расширение функциональных возможностей.',
     path: '/services/modernization',

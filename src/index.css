@@ -112,7 +112,7 @@
 
 @layer components {
   .gradient-heading {
-    @apply bg-gradient-to-r from-guard-DEFAULT to-guard-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#0F3460] to-[#E94560] bg-clip-text text-transparent;
   }
   
   .guard-container {

@@ -4,9 +4,11 @@ import { Link, NavLink } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useCart } from '@/contexts/CartContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalItems } = useCart();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -25,8 +27,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-bold text-2xl text-guard-DEFAULT">
-              Guard<span className="text-guard-accent">Install</span>
+            <span className="font-bold text-2xl text-[#0F3460]">
+              Guard<span className="text-[#E94560]">Install</span>
             </span>
           </Link>
 
@@ -50,9 +52,11 @@ const Navbar = () => {
             <Link to="/shop/cart">
               <Button variant="ghost" size="icon" className="relative">
                 <ShoppingCart className="h-5 w-5" />
-                <span className="absolute -top-1 -right-1 bg-guard-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                  0
-                </span>
+                {totalItems > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-[#E94560] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                    {totalItems}
+                  </span>
+                )}
               </Button>
             </Link>
             <Link to="/account">
@@ -98,9 +102,11 @@ const Navbar = () => {
                 <Button variant="ghost" size="sm" className="relative">
                   <ShoppingCart className="h-4 w-4 mr-2" />
                   Корзина
-                  <span className="absolute -top-1 -right-1 bg-guard-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                    0
-                  </span>
+                  {totalItems > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-[#E94560] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                      {totalItems}
+                    </span>
+                  )}
                 </Button>
               </Link>
               <Link to="/account" onClick={() => setIsMenuOpen(false)}>

@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ShoppingCart, Search } from 'lucide-react';
+import { useCart } from '@/contexts/CartContext';
+import { useToast } from '@/hooks/use-toast';
 
 // Sample products data
 const products = [
@@ -56,6 +58,8 @@ const products = [
 const ShopPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeTab, setActiveTab] = useState('all');
+  const { addToCart } = useCart();
+  const { toast } = useToast();
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -63,9 +67,23 @@ const ShopPage = () => {
     return matchesSearch && matchesCategory;
   });
 
+  const handleAddToCart = (product) => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image
+    });
+    
+    toast({
+      title: "Товар добавлен",
+      description: `${product.name} добавлен в корзину`,
+    });
+  };
+
   return (
     <>
-      <section className="bg-gradient-to-r from-guard-DEFAULT to-guard-dark text-white py-12">
+      <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-12">
         <div className="guard-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Наш магазин</h1>
@@ -119,13 +137,18 @@ const ShopPage = () => {
                     <CardTitle className="text-lg font-medium line-clamp-2">{product.name}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-4 pt-2 flex-grow">
-                    <p className="text-xl font-bold text-guard-DEFAULT">{product.price.toLocaleString()} ₽</p>
+                    <p className="text-xl font-bold text-[#0F3460]">{product.price.toLocaleString()} ₽</p>
                   </CardContent>
                   <CardFooter className="p-4 pt-0 gap-2">
                     <Button asChild variant="default" size="sm" className="w-full">
                       <Link to={`/shop/product/${product.id}`}>Подробнее</Link>
                     </Button>
-                    <Button variant="outline" size="icon" className="shrink-0">
+                    <Button 
+                      variant="outline" 
+                      size="icon" 
+                      className="shrink-0"
+                      onClick={() => handleAddToCart(product)}
+                    >
                       <ShoppingCart className="h-4 w-4" />
                     </Button>
                   </CardFooter>

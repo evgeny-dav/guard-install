@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ShoppingCart, Check, Package, ArrowLeft } from 'lucide-react';
+import { useCart } from '@/contexts/CartContext';
+import { useToast } from '@/hooks/use-toast';
 
 // Sample product data
 const productsData = [
@@ -46,6 +48,8 @@ const productsData = [
 const ProductPage = () => {
   const { id } = useParams<{id: string}>();
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
+  const { toast } = useToast();
   
   // Find product based on id
   const product = productsData.find(p => p.id === id) || productsData[0]; // Fallback to first product if not found
@@ -57,6 +61,21 @@ const ProductPage = () => {
   
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
+  };
+
+  const handleAddToCart = () => {
+    for (let i = 0; i < quantity; i++) {
+      addToCart({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image
+      });
+    }
+    toast({
+      title: "Товар добавлен",
+      description: `${product.name} добавлен в корзину`,
+    });
   };
 
   return (
@@ -137,7 +156,7 @@ const ProductPage = () => {
                 </button>
               </div>
               
-              <Button className="flex-1 gap-2">
+              <Button className="flex-1 gap-2" onClick={handleAddToCart}>
                 <ShoppingCart className="h-5 w-5" />
                 Добавить в корзину
               </Button>

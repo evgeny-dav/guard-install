@@ -67,7 +67,7 @@ const InstallationPage = () => {
             
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45249be83?ixlib=rb-4.0.3"
+                src="https://impsa.ru/upload/iblock/1b8/картинка-для-монтажа.webp"
                 alt="Монтаж систем безопасности"
                 className="w-full h-auto"
               />
@@ -84,7 +84,7 @@ const InstallationPage = () => {
             <Card className="bg-white overflow-hidden flex flex-col">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1563467287543-687d63908988?ixlib=rb-4.0.3" 
+                  src="https://s2.stc.all.kpcdn.net/expert/wp-content/uploads/2023/04/videonablyudenie.jpg" 
                   alt="Монтаж видеонаблюдения" 
                   className="w-full h-full object-cover"
                 />
@@ -114,7 +114,7 @@ const InstallationPage = () => {
             <Card className="bg-white overflow-hidden flex flex-col">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1622022266055-033804fa2e2a?ixlib=rb-4.0.3" 
+                  src="https://media.istockphoto.com/id/1707812169/ru/фото/установка-домашнего-детектора-дыма-и-пожарной-сигнализации-проверка-тестирование-или-замена.jpg?s=612x612&w=0&k=20&c=e_VJiiKCqpUo2Y5jgRWjH2XPeWKe1BkAVldBB3dg8Po=" 
                   alt="Монтаж пожарной сигнализации" 
                   className="w-full h-full object-cover"
                 />

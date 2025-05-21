@@ -67,7 +67,7 @@ const ConsultationPage = () => {
             
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-4.0.3"
+                src="https://img.freepik.com/free-photo/horizontal-shot-handsome-young-brunette-man-recruiter-wearing-stylish-formal-clothes-interviewing-unrecognizable-mature-female-job-candidate-listening-attentively-her-modern-office-interior_344912-1925.jpg?semt=ais_hybrid&w=740"
                 alt="Консультации по безопасности"
                 className="w-full h-auto"
               />

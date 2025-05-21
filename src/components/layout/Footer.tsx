@@ -10,9 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">
+             
+            <span className="font-bold text-2xl text-[#0F3460]">
+              Guard<span className="text-[#E94560]">Install</span>
+            </span>
+          
+            {/* <h3 className="text-xl font-bold mb-4">
               Guard<span className="text-guard-accent">Install</span>
-            </h3>
+            </h3>*/}
             <p className="mb-4 text-gray-500">
               Профессиональные системы видеонаблюдения и пожарной сигнализации. Монтаж, обслуживание и продажа оборудования.
             </p>

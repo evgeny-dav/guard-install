@@ -68,7 +68,7 @@ const ModernizationPage = () => {
             
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1594964644661-7225b7fd5f38?ixlib=rb-4.0.3"
+                src="https://img.freepik.com/free-vector/home-security-isometric-flowchart_1284-21954.jpg?semt=ais_hybrid&w=740"
                 alt="Модернизация систем безопасности"
                 className="w-full h-auto"
               />

@@ -67,7 +67,7 @@ const DesignPage = () => {
             
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1581092335337-9ef71f76bc6f?ixlib=rb-4.0.3"
+                src="https://cameredesupraveghere.md/img_servicii/08202306270144169332.png"
                 alt="Проектирование систем безопасности"
                 className="w-full h-auto"
               />
@@ -124,7 +124,7 @@ const DesignPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1579118246034-d02130ae3f9a?ixlib=rb-4.0.3" 
+                src="https://ab-profi.ru/wp-content/uploads/2019/01/sys.jpg" 
                 alt="Видеонаблюдение" 
                 className="w-full h-64 object-cover"
               />
@@ -142,7 +142,7 @@ const DesignPage = () => {
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1541992206525-3a5b154fcdb4?ixlib=rb-4.0.3" 
+                src="https://ekspertiza-stroj.ru/wp-content/uploads/2019/06/proektirovanie.jpg" 
                 alt="Пожарная сигнализация" 
                 className="w-full h-64 object-cover"
               />

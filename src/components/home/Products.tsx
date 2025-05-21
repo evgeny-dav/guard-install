@@ -31,7 +31,7 @@ const featuredProducts = [
   {
     id: 4,
     name: 'Контрольная панель Болид С2000М',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    image: 'https://bolid.ru/files/337/528/s2000m_0.png',
     price: 15700,
     category: 'Пожарная сигнализация',
   },

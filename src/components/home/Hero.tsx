@@ -9,9 +9,11 @@ const Hero = () => {
       <div className="guard-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-700">
-              Современные системы безопасности
-            </h1>
+            {/*<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-700">*/}
+           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">
+
+            Современные системы безопасности
+            </h2>
             <p className="text-lg md:text-xl text-gray-500">
               Профессиональный монтаж систем видеонаблюдения и пожарной сигнализации. Гарантия качества и надежности.
             </p>

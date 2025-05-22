@@ -21,7 +21,7 @@ const CTA = () => {
             <Button asChild size="lg" className="bg-white text-guard-DEFAULT hover:bg-gray-100">
               <Link to="/contacts">Связаться с нами</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white text-gray-500 hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-white  hover:bg-white/10">
               <Link to="/services">Узнать больше</Link>
             </Button>
           </div>

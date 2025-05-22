@@ -8,7 +8,9 @@ const CTA = () => {
     <section className="bg-guard-DEFAULT text-white py-16">
       <div className="guard-container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6" text-gray-700>
+          {/*<h2 className="text-3xl md:text-4xl font-bold mb-6" text-gray-700>*/}
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">
+
             Готовы обеспечить безопасность?
           </h2>
           <p className="text-lg md:text-xl mb-8 text-gray-500">

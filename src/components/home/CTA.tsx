@@ -40,11 +40,11 @@ const CTA = () => {
             </a>
           </div>
         </div>
-      </section>*/}
+    {/*</section>
           </div>
         </div>
       </div>
-    </section>
+    </section>*/}
   );
 };
 

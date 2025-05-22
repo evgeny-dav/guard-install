@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const CTA = () => {
   return (
-    {/* <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-16">
+     <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-16">
       <div className="guard-container">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" >
@@ -23,8 +23,8 @@ const CTA = () => {
             </Button>
             <Button asChild size="lg" variant="outline" className="border border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white/10 transition-colors">
               <Link to="/services">Узнать больше</Link>
-            </Button>*/}
-             <section className="bg-[#0F3460] text-white py-16">
+            </Button>
+            {/* <section className="bg-[#0F3460] text-white py-16">
         <div className="guard-container text-center">
           <h2 className="text-3xl font-bold mb-6">Готовы обеспечить безопасность?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
@@ -40,11 +40,11 @@ const CTA = () => {
             </a>
           </div>
         </div>
-    {/*</section>
+    </section>*/}
           </div>
         </div>
       </div>
-    </section>*/}
+    </section>
   );
 };
 

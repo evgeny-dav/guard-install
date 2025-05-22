@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const CTA = () => {
   return (
-    <section className="bg-guard-DEFAULT text-white py-16">
+    <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-16">
       <div className="guard-container">
         <div className="max-w-3xl mx-auto text-center">
           {/*<h2 className="text-3xl md:text-4xl font-bold mb-6" text-gray-700>*/}

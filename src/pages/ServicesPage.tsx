@@ -50,7 +50,7 @@ const ServicesPage = () => {
         <div className="guard-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h1>
-            <p className="text-lg text-gray-500">
+            <p className="text-lg text-gray-100">
               Предлагаем полный спектр услуг в сфере систем видеонаблюдения и пожарной сигнализации.
             </p>
           </div>

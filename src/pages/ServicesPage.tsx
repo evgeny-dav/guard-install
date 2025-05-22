@@ -46,7 +46,7 @@ const services = [
 const ServicesPage = () => {
   return (
     <>
-      <section className="bg-gradient-to-r from-guard-DEFAULT to-guard-dark text-white py-12">
+      <section className="bg-gradient-to-r from-[#0F3460] to-[#16213E] text-white py-16">
         <div className="guard-container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h1>

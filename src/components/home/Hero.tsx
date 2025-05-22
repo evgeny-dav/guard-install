@@ -9,17 +9,17 @@ const Hero = () => {
       <div className="guard-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-500">
               Современные системы безопасности
             </h1>
             <p className="text-lg md:text-xl text-gray-500">
               Профессиональный монтаж систем видеонаблюдения и пожарной сигнализации. Гарантия качества и надежности.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-guard-accent hover:bg-guard-accent/90 text-white">
+              <Button asChild size="lg" className="bg-guard-accent hover:bg-guard-accent/90 text-white text-gray-500">
                 <Link to="/services">Наши услуги</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-guard-DEFAULT">
+              <Button asChild size="lg" variant="outline" className="border-white text-white text-gray-500 hover:bg-white hover:text-guard-DEFAULT">
                 <Link to="/contacts">Связаться с нами</Link>
               </Button>
             </div>

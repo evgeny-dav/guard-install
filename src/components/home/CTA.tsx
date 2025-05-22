@@ -8,7 +8,7 @@ const CTA = () => {
     <section className="bg-guard-DEFAULT text-white py-16">
       <div className="guard-container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" text-gray-700>
             Готовы обеспечить безопасность?
           </h2>
           <p className="text-lg md:text-xl mb-8 text-gray-500">
@@ -19,7 +19,7 @@ const CTA = () => {
             <Button asChild size="lg" className="bg-white text-guard-DEFAULT hover:bg-gray-100">
               <Link to="/contacts">Связаться с нами</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-white text-gray-500 hover:bg-white/10">
               <Link to="/services">Узнать больше</Link>
             </Button>
           </div>
